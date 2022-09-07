@@ -1,42 +1,22 @@
 <script>
-	import { ExternalLink } from '@sveltinio/essentials';
+	// import { ExternalLink } from '@sveltinio/essentials';
 </script>
 
-<section class="hero">
-	<div class="mx-auto max-w-7xl">
-		<div class="py-44">
-			<div class="max-w-5xl px-6 mx-auto">
-				<div class="pb-24 text-center">
-					<h1
-						class=" pb-4 mx-auto text-skin-base text-3xl font-bold tracking-tighter sm:text-4xl lg:text-5xl lg:leading-tight"
-					>
-						Your Sveltin project is <span
-							class="block italic font-normal text-skin-accent capitalize"
-							>up & running!</span
-						>
-					</h1>
-
-					<div
-						class="inline-flex justify-center w-full ml-auto mr-auto mt-4"
-					>
-						<ExternalLink
-							id="learnMoreLink"
-							name="learnMore"
-							url="https://docs.sveltin.io/tutorials"
-							alt="link to the tutorial pages"
-							class="btn btn-accent">Learn More</ExternalLink
-						>
-
-						<ExternalLink
-							id="documentationLink"
-							name="docs"
-							url="https://docs.sveltin.io"
-							alt="link to the documentation website"
-							class="btn btn-base">Read the Docs</ExternalLink
-						>
-					</div>
-				</div>
-			</div>
+<section class="hero relative">
+	<img src="/hero-img.png" class="w-full" alt="" />
+	<div class="absolute top-0 left-0 ml-24 mt-60">
+		<p class="mb-7 text-xl font-semibold">Modex to the world</p>
+		<p class="mb-7 text-center text-7xl font-bold leading-snug text-white md:text-left">
+			Nourish Your Inner <br /> Skill with <span class="text-primary">MODEX</span>
+		</p>
+		<p class="mb-24 w-fit text-xl font-semibold tracking-wide text-white">
+			Learn about new knowledge and abilities from experts <br /> and professionals in any field
+		</p>
+		<div class="md:justify-left flex items-center space-x-5">
+			<button class="rounded border border-primary bg-primary py-3 px-6 text-white shadow-md"
+				>Get Started</button
+			>
+			<button class="rounded border border-primary py-3 px-8 text-white">Discount</button>
 		</div>
 	</div>
 </section>

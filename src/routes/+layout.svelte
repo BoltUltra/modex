@@ -8,6 +8,7 @@
 	import { GoogleFonts } from '@sveltinio/services';
 	import ScrollToTopButton from '@sveltinio/widgets/components/ScrollToTopButton.svelte';
 	import Footer from '$themes/sveltin_theme/partials/Footer.svelte';
+	import Navbar from '$themes/sveltin_theme/partials/navbar.svelte';
 
 	const sortedMenu = orderBy(menu, 'weight');
 </script>
@@ -17,10 +18,11 @@
 
 <GoogleFonts fonts={googleFonts} />
 
-<div class="min-h-screen w-full flex flex-col justify-center">
+<div class="flex min-h-screen w-full flex-col justify-center">
+	<Navbar />
 	<main class="grow">
 		<slot />
 	</main>
 	<Footer websiteData={website} />
 </div>
-<ScrollToTopButton />
+<ScrollToTopButton fillColor="#772EB0" />

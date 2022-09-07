@@ -8,14 +8,14 @@
 <div class="error-container">
 	<div class="wrapper">
 		<main class="main">
-			<p class="error-code">{$page.status}</p>
+			<p class="error-code text-primary">{$page.status}</p>
 			<div class="message-wrapper">
 				<div class="message-main">
 					<h1 class="error-title">
 						{$page.error.message}
 					</h1>
 					<p class="error-text">
-						Please check the URL in the address bar and try again.
+						Please check the URL in the address bar and try again | Oga rest.
 					</p>
 				</div>
 			</div>
@@ -47,7 +47,6 @@
 		font-size: 2.25rem;
 		line-height: 2.5rem;
 		font-weight: 800;
-		color: #0b7599;
 	}
 
 	.error-title {

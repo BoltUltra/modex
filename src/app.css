@@ -22,11 +22,11 @@
 	}
 
 	body {
-		@apply bg-white mx-auto font-sans;
+		@apply mx-auto bg-white font-sans;
 	}
 
 	h1 {
-		@apply mx-auto mt-3 mb-8 transition-all leading-4;
+		@apply mx-auto mt-3 mb-8 leading-4 transition-all;
 	}
 
 	code[class*='language-'] {
@@ -51,39 +51,39 @@
 }
 
 .main-container {
-	@apply relative min-h-screen w-full flex flex-col justify-center;
+	@apply relative flex min-h-screen w-full flex-col justify-center;
 }
 
 .btn {
-	@apply relative inline-flex items-center pl-2 pr-2 pt-2 pb-2 text-sm font-medium border-2;
+	@apply relative inline-flex items-center border-2 pl-2 pr-2 pt-2 pb-2 text-sm font-medium;
 }
 
 .btn-accent {
-	@apply relative inline-flex items-center px-2 py-2 text-sm font-medium text-white bg-river border-2 border-river rounded-l-lg hover:bg-haiti focus:z-10 focus:outline-none focus:ring-1 focus:ring-river focus:border-white lg:px-8;
+	@apply relative inline-flex items-center rounded-l-lg border-2 border-river bg-river px-2 py-2 text-sm font-medium text-white hover:bg-haiti focus:z-10 focus:border-white focus:outline-none focus:ring-1 focus:ring-river lg:px-8;
 }
 
 .btn-base {
-	@apply relative inline-flex items-center px-2 py-2 -ml-px text-sm font-medium border-2 border-river rounded-r-lg focus:z-10 focus:outline-none focus:ring-1 focus:ring-auburn focus:border-auburn lg:px-8;
+	@apply relative -ml-px inline-flex items-center rounded-r-lg border-2 border-river px-2 py-2 text-sm font-medium focus:z-10 focus:border-auburn focus:outline-none focus:ring-1 focus:ring-auburn lg:px-8;
 }
 
 .artifact-container {
-	@apply text-skin-dark flex flex-col justify-center p-11 mx-auto my-7 max-w-4xl;
+	@apply mx-auto my-7 flex max-w-4xl flex-col justify-center p-11 text-skin-dark;
 }
 
 .content {
-	@apply w-full mx-auto text-gray-800 leading-6;
+	@apply mx-auto w-full leading-6 text-gray-800;
 }
 
 .content h1 {
-	@apply text-left leading-8 text-2xl font-medium mx-auto break-words;
+	@apply mx-auto break-words text-left text-2xl font-medium leading-8;
 }
 
 .content h2 {
-	@apply text-left text-xl font-normal leading-7 my-2 mx-0;
+	@apply my-2 mx-0 text-left text-xl font-normal leading-7;
 }
 
 .message {
-	@apply py-2 px-4 rounded-md;
+	@apply rounded-md py-2 px-4;
 }
 
 .warning {
@@ -95,5 +95,5 @@
 }
 
 .markdown-body {
-	@apply mx-auto p-11 prose-base;
+	@apply prose-base mx-auto p-11;
 }

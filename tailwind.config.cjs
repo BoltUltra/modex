@@ -1,10 +1,7 @@
 const plugin = require('tailwindcss/plugin');
 
 const config = {
-	content: [
-		'./src/routes/*.{html,svelte,js,ts}',
-		'./themes/**/*.{html,svelte,js,ts}',
-	],
+	content: ['./src/routes/*.{html,svelte,js,ts}', './themes/**/*.{html,svelte,js,ts}'],
 	theme: {
 		extend: {
 			textColor: {
@@ -13,15 +10,15 @@ const config = {
 					dark: 'var(--dark)',
 					base: 'var(--color-text-base)',
 					muted: 'var(--color-text-muted)',
-					accent: 'var(--color-text-accent)',
-				},
+					accent: 'var(--color-text-accent)'
+				}
 			},
 			backgroundColor: {
 				skin: {
 					white: 'var(--pure-white)',
 					dark: 'var(--dark)',
-					'deep-dark': 'var(--deep-dark)',
-				},
+					'deep-dark': 'var(--deep-dark)'
+				}
 			},
 			colors: {
 				haiti: '#2c2c35',
@@ -30,6 +27,7 @@ const config = {
 				santa: '#a0a1b2',
 				cege: '#0B7599',
 				auburn: '#9e2a2a',
+				primary: '#772EB0'
 			},
 			fontFamily: {
 				mono: ['"IBM Plex Mono"', 'ui-monospace'],
@@ -46,10 +44,10 @@ const config = {
 					'sans-serif',
 					'"Apple Color Emoji"',
 					'"Segoe UI Emoji"',
-					'"Segoe UI Symbol"',
-				],
-			},
-		},
+					'"Segoe UI Symbol"'
+				]
+			}
+		}
 	},
 	plugins: [
 		require('@tailwindcss/typography'),
@@ -59,18 +57,16 @@ const config = {
 			addVariant('firefox', ({ container, separator }) => {
 				const isFirefoxRule = postcss.atRule({
 					name: '-moz-document',
-					params: 'url-prefix()',
+					params: 'url-prefix()'
 				});
 				isFirefoxRule.append(container.nodes);
 				container.append(isFirefoxRule);
 				isFirefoxRule.walkRules((rule) => {
-					rule.selector = `.${e(
-						`firefox${separator}${rule.selector.slice(1)}`
-					)}`;
+					rule.selector = `.${e(`firefox${separator}${rule.selector.slice(1)}`)}`;
 				});
 			});
-		}),
-	],
+		})
+	]
 };
 
 module.exports = config;

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Reason from '$themes/sveltin_theme/partials/reason.svelte';
+	import Features from '$themes/sveltin_theme/partials/features.svelte';
 	import { website } from '$config/website.js';
 	import type { IWebPageMetadata } from '@sveltinio/seo/types';
 	import { OpenGraphType, TwitterCardType } from '@sveltinio/seo/types';
@@ -10,7 +12,7 @@
 		url: website.baseURL,
 		title: website.title,
 		description: website.seoDescription,
-		keywords: (website.keywords) ? website.keywords : '',
+		keywords: website.keywords ? website.keywords : '',
 		image: getFavicon(website),
 		opengraph: {
 			type: OpenGraphType.Website
@@ -27,3 +29,5 @@
 <!-- End of SEO Section -->
 
 <Hero />
+<Features />
+<Reason />
