@@ -1,4 +1,5 @@
 <script lang="ts">
+	import About from './../../themes/sveltin_theme/partials/about.svelte';
 	import Reason from '$themes/sveltin_theme/partials/reason.svelte';
 	import Features from '$themes/sveltin_theme/partials/features.svelte';
 	import { website } from '$config/website.js';
@@ -31,3 +32,4 @@
 <Hero />
 <Features />
 <Reason />
+<About />
